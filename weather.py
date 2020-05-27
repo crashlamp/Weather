@@ -22,7 +22,7 @@ def display_weather(weather):
         high = entry['max_temp']
         low = entry['min_temp']
         state = entry['weather_state_name']
-        print(f"{date}\t{state}\thigh {high:2.1f}°C\tlow {low:2.1f}°C")
+        print(f"{date}\t{state}\thigh {high*1.8+32:2.1f}°F\tlow {low*1.8+32:2.1f}°F")
 
 def weather_dialog():
     try:
